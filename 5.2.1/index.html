@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const student = {
+            name: "Piyavach",
+            age: 17,
+            grade: "A",
+        };
+        const { name, age, grade } = student;
+        console.log("1.", name, age, grade);
+
+        function sayHello(personName = "Guest") {
+            console.log(`Hello, ${personName}!`);
+        }
+        sayHello();
+        sayHello("Piya");
+
+        const words = ["JavaScript", "is", "fun"];
+        const sentence = words.join(" ");
+        console.log("3.", sentence);
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+        const combined = arr1.concat(arr2);
+        console.log("4.", combined);
+
+        let fruits = ["apple", "banana"];
+        fruits.push("mango");
+        fruits.pop();
+        fruits.unshift("orange");
+        fruits.shift();
+        console.log("5.", fruits);
+
+        let colors = ["red", "green", "blue", "yellow"];
+        colors.splice(1, 2, "purple");
+        console.log("6.", colors);
+
+        const numbers = [0, 1, 2, 3, 4, 5];
+        const sliced = numbers.slice(2, 5);
+        console.log("7.", sliced);
+
+        const numbers2 = [10, 20, 30, 40, 50];
+        console.log("8.1 index of 30:", numbers2.indexOf(30));
+        console.log("8.2 first number > 25:", numbers2.find((num) => num > 25));
+        console.log("8.3 index of first number > 25:", numbers2.findIndex((num) => num > 25));
+
+        const prices = [100, 200, 300];
+        const pricesWithVAT = prices.map((price) => price * 1.07);
+        console.log("9.", pricesWithVAT);
+
+        const scores = [45, 67, 89, 32, 50, 90];
+        const passed = scores.filter((score) => score >= 50);
+        console.log("10.", passed);
+
+        const cart = [100, 200, 50, 150];
+        const total = cart.reduce((sum, price) => sum + price, 0);
+        console.log("11.", total);
+
+        const nums = [5, 2, 9, 1, 5, 6];
+        const asc = [...nums].sort((a, b) => a - b);
+        const desc = [...nums].sort((a, b) => b - a);
+        console.log("12.1 ascending:", asc);
+        console.log("12.2 descending:", desc);
+
+    </script>
+</body>
+
+</html>

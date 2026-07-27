@@ -1,17 +1,17 @@
 var x1 = 10;
 if (x1 === 10) {
     var y1 = 100;
-    console.log(y1);
+    console.log(y1); // 100
 }
-console.log(y1);
+console.log(y1); // 100
 
 
 var x2 = 10;
 if (x2 === 10) {
     var y2 = 100;
-    console.log(y2);
+    console.log(y2); // 100
 }
-console.log(y2);
+console.log(y2); // 100
 
 
 var x3 = 10;
@@ -19,7 +19,7 @@ if (x3 === 10) {
     let y3 = 100;
     console.log(y3); // 100
 }
-console.log(y3); //เกิด Error (ReferenceError) เพราะ let ใช้งานได้แค่ในปีกกา {}
+//console.log(y3); //เกิด Error (ReferenceError) เพราะ let ใช้งานได้แค่ในปีกกา {}
 
 
 let myArray1 = [1, 2, 3];
